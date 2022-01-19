@@ -3,8 +3,17 @@ import {View,Button, Text} from 'react-native'
 
 export default props => {
     return (
-        <View style={{flex:1,}}>
-            <View>
+        <View style={{flex:1}}>
+            <View style={{flexDirection:'row',justifyContent:'space-around'}}>
+            {props.back
+                ?
+                <Button 
+                title='Back' 
+                onPress={()=>{props.navigation.goBack()
+                }}>                   
+                </Button>
+                :false
+                }
                 {props.advance
                 ?
                 <Button 

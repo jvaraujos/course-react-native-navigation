@@ -11,13 +11,13 @@ export default props => {
     return (
         <Stack.Navigator initialRouteName ="ScreenA">
             <Stack.Screen name="ScreenA" options={{title:'Initial infos'}}>{props=>(
-                <StepStack {...props} advance="ScreenB">
+                <StepStack {...props} advance="ScreenB" >
                     <ScreenA/>
                 </StepStack>
             )}
             </Stack.Screen>
-            <Stack.Screen name="ScreenB">{props=>(
-                <StepStack {...props} advance="ScreenC">
+            <Stack.Screen name="ScreenB" >{props=>(
+                <StepStack {...props} advance="ScreenC" back>
                     <ScreenB/>
                 </StepStack>
             )}
