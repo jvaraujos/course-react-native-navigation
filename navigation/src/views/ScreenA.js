@@ -9,7 +9,6 @@ export default props => {
             </TextoCentral>
     )
 }
-
 const styles = StyleSheet.create({
     container:{
         backgroundColor:'#fff',
