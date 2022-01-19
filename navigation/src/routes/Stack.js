@@ -22,7 +22,11 @@ export default props => {
                 </StepStack>
             )}
             </Stack.Screen>
-            <Stack.Screen name="ScreenC" component={ScreenC}>
+            <Stack.Screen name="ScreenC" >{props=>(
+                <StepStack {...props} advance="ScreenC" back>
+                    <ScreenC/>
+                </StepStack>
+            )}
             </Stack.Screen>
         </Stack.Navigator>   
         )
