@@ -4,11 +4,12 @@ import TextoCentral from '../components/TextoCentral'
 
 export default props => {
     return (
-            <TextoCentral corFundo='#9932cd'>
-                Tela C
+            <TextoCentral corFundo='#e53935'>
+                Screen A
             </TextoCentral>
     )
 }
+
 const styles = StyleSheet.create({
     container:{
         backgroundColor:'#fff',

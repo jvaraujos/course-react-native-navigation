@@ -1,21 +1,17 @@
-import React,{Component} from 'react'
+import React from 'react'
 import { SafeAreaView,StyleSheet } from 'react-native'
-import TelaA from './views/TelaA'
-import TelaB from './views/TelaB'
-import TelaC from './views/TelaC'
+import ScreenA from './views/ScreenA'
+import ScreenB from './views/ScreenB'
+import ScreenC from './views/ScreenC'
 
-export default class App extends Component{
-    render (){
-        return (
+export default props => {
+        return(
         <SafeAreaView style={styles.container}>
-        <TelaA></TelaA>
-        <TelaB></TelaB>
-        <TelaC></TelaC>
-
+        <ScreenA/>
+        <ScreenB/>
+        <ScreenC/>
         </SafeAreaView>
-     )
-}
-}
+        )}
 const styles = StyleSheet.create({
     container:{
       flex: 1

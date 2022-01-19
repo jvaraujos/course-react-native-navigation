@@ -4,8 +4,8 @@ import TextoCentral from '../components/TextoCentral'
 
 export default props => {
     return (
-            <TextoCentral corFundo='#e53935'>
-                Tela A
+            <TextoCentral corFundo='#3b82c4'>
+                Screen B
             </TextoCentral>
     )
 }
