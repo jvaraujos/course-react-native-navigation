@@ -16,15 +16,17 @@ export default props => {
                 </StepStack>
             )}
             </Stack.Screen>
-            <Stack.Screen name="ScreenB" >{props=>(
-                <StepStack {...props} advance="ScreenC" back>
+            <Stack.Screen name="ScreenB" >
+                {props=>(
+                <StepStack {...props} advance="ScreenC" back advanceParams={{numero:Math.random()*100}}>
                     <ScreenB/>
                 </StepStack>
             )}
             </Stack.Screen>
-            <Stack.Screen name="ScreenC" >{props=>(
-                <StepStack {...props} advance="ScreenC" back>
-                    <ScreenC/>
+            <Stack.Screen name="ScreenC" >
+                {props=>(
+                <StepStack {...props} advance="ScreenC" back  advanceParams={{numero:Math.random()*100}}>
+                    <ScreenC  {...props} />
                 </StepStack>
             )}
             </Stack.Screen>

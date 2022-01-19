@@ -18,7 +18,7 @@ export default props => {
                 ?
                 <Button 
                 title='Advance' 
-                onPress={()=>{props.navigation.push(props.advance)
+                onPress={()=>{props.navigation.navigate(props.advance,props.advanceParams)
                 }}>                   
                 </Button>
                 :false
