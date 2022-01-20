@@ -1,16 +1,17 @@
-import React,{Component} from 'react'
+import React from 'react'
 import { SafeAreaView,StyleSheet } from 'react-native'
-import TextoCentral from './components/TextoCentral'
+import ScreenA from './views/ScreenA'
+import ScreenB from './views/ScreenB'
+import ScreenC from './views/ScreenC'
 
-export default class App extends Component{
-    render (){
-        return (
+export default props => {
+        return(
         <SafeAreaView style={styles.container}>
-        <TextoCentral>App</TextoCentral>
+        <ScreenA/>
+        <ScreenB/>
+        <ScreenC/>
         </SafeAreaView>
-     )
-}
-}
+        )}
 const styles = StyleSheet.create({
     container:{
       flex: 1
