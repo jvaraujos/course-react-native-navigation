@@ -1,17 +1,19 @@
 import React from 'react'
 import { Text ,SafeAreaView,StyleSheet} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
-import Stack from './Stack' 
 import Tab  from './Tab'
-
+//import Drawer from './Drawer'
 export default props => {
     return (
-        <NavigationContainer>
+        
      <SafeAreaView style={{flex: 1}}>
-             {/* <Stack/> */}
-             <Tab></Tab>
+         <NavigationContainer>
+             <Tab/>
+             {/* <Drawer>
+                o drawer esta bugando o projeto no momento do import!
+             </Drawer> */}
+         </NavigationContainer>
         </SafeAreaView>
-        </NavigationContainer>
    
     )
 }
